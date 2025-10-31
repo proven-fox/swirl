@@ -44,9 +44,9 @@ services:
       - net
     volumes:
       - prometheus:/prometheus
-    configs:
-      - source: prometheus.yml
-        target: /etc/prometheus/prometheus.yml
+    # configs:
+    #   - source: prometheus.yml
+    #     target: /etc/prometheus/prometheus.yml
     deploy:
       replicas: 1
       placement:
